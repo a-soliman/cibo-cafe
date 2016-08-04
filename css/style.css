@@ -373,8 +373,8 @@ em { color: red }
     width: 100%;
     z-index: 9;
 }
-.nivo-directionNav a.nivo-prevNav { background: rgba(0, 0, 0, 0) url("img/slider/pre.png") no-repeat scroll 0 0 }
-.nivo-directionNav a.nivo-nextNav { background: rgba(0, 0, 0, 0) url("img/slider/next.png") no-repeat scroll 0 0 }
+.nivo-directionNav a.nivo-prevNav { background: rgba(0, 0, 0, 0) url("../img/slider/pre.png") no-repeat scroll 0 0 }
+.nivo-directionNav a.nivo-nextNav { background: rgba(0, 0, 0, 0) url("../img/slider/next.png") no-repeat scroll 0 0 }
 .sl-icon {
     left: 50%;
     margin-left: -75px;
@@ -500,13 +500,13 @@ a.com-btn:hover,.submt .com-btn.blg-btn:hover {
     transform: rotate(10deg);
 }
 .carsoule-btn.owl-theme .owl-controls .owl-buttons .owl-prev {
-    background: rgba(0, 0, 0, 0) url("img/author/pre-account.png") no-repeat scroll 8px 5px;
+    background: rgba(0, 0, 0, 0) url("../img/author/pre-account.png") no-repeat scroll 8px 5px;
     height: 40px;
     text-align: center;
     width: 40px;
 }
 .carsoule-btn.owl-theme .owl-controls .owl-buttons .owl-next {
-    background: rgba(0, 0, 0, 0) url("img/author/next-account.png") no-repeat scroll 8px 5px;
+    background: rgba(0, 0, 0, 0) url("../img/author/next-account.png") no-repeat scroll 8px 5px;
     height: 40px;
     left: auto;
     margin-right: -60px;
@@ -540,7 +540,7 @@ a.com-btn:hover,.submt .com-btn.blg-btn:hover {
     transform: rotate(10deg);
 }
 .service-holder-area {
-    background: rgba(0, 0, 0, 0) url("img/bg-1.jpg") no-repeat scroll 0 0 / 100% 100%;
+    background: rgba(0, 0, 0, 0) url("../img/bg-1.jpg") no-repeat scroll 0 0 / 100% 100%;
     overflow: hidden;
     width: 100%;
 }
@@ -623,7 +623,7 @@ a.com-btn:hover,.submt .com-btn.blg-btn:hover {
     position: relative;
     text-align: center;
 }
-.our-menu-area { background: rgba(0, 0, 0, 0) url("img/parallax-1.jpg") repeat scroll 0 0 }
+.our-menu-area { background: rgba(0, 0, 0, 0) url("../img/parallax-1.jpg") repeat scroll 0 0 }
 .single-our-menu {
     background: #fff none repeat scroll 0 0;
     border-radius: 10px;
@@ -735,7 +735,7 @@ a.com-btn:hover,.submt .com-btn.blg-btn:hover {
     border: 1px solid #fff;
 }
 .testimonial-area:before {
-    background: rgba(0, 0, 0, 0) url("img/bg-laquo.png") no-repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("../img/bg-laquo.png") no-repeat scroll 0 0;
     content: "";
     height: 100%;
     left: 18%;
@@ -801,7 +801,7 @@ a.com-btn:hover,.submt .com-btn.blg-btn:hover {
 }
 .single-menu-item { border-top: 1px dotted #ddd }
 .our-special-menu-area {
-    background: rgba(0, 0, 0, 0) url("img/bgmenu.jpg") no-repeat scroll 0 0 / 100% 100%;
+    background: rgba(0, 0, 0, 0) url("../img/bgmenu.jpg") no-repeat scroll 0 0 / 100% 100%;
     overflow: hidden;
     width: 100%;
 }
@@ -812,11 +812,10 @@ a.com-btn:hover,.submt .com-btn.blg-btn:hover {
 .sma-middle .carsoule-btn.smp-carsoule.owl-theme .owl-controls .owl-buttons div { bottom: -10% }
 .sma-middle .sma-small .carsoule-btn.smp-carsoule.owl-theme .owl-controls .owl-buttons div { bottom: -15% }
 .carsoule-btn.smp-carsoule.owl-theme .owl-controls .owl-buttons .owl-next {
-    background: rgba(0, 0, 0, 0) url("img/slider/next-menu.png") no-repeat scroll 10px 10px;
+    background: rgba(0, 0, 0, 0) url("../img/slider/next-menu.png") no-repeat scroll 10px 10px;
     margin-right: -25px;
-    background-color: orange;
 }
-.carsoule-btn.smp-carsoule.owl-theme .owl-controls .owl-buttons .owl-prev { background: rgba(0, 0, 0, 0) url("img/slider/pre-menu.png") no-repeat scroll 10px 10px }
+.carsoule-btn.smp-carsoule.owl-theme .owl-controls .owl-buttons .owl-prev { background: rgba(0, 0, 0, 0) url("../img/slider/pre-menu.png") no-repeat scroll 10px 10px }
 .sma-img { overflow: hidden }
 .sma-img > img {
     -webkit-transition: all 0.3s ease 0s;
@@ -854,16 +853,16 @@ a.com-btn:hover,.submt .com-btn.blg-btn:hover {
 }
 .sma-middle .special-menu { padding: 20px 20px 65px }
 .sma-middle {
-    background: rgba(0, 0, 0, 0) url("img/bg_left.jpg") no-repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("../img/bg_left.jpg") no-repeat scroll 0 0;
     overflow: hidden;
 }
 .special-menu.sma-small { margin-top: 255px }
 .reservation-area {
-    background: rgba(0, 0, 0, 0) url("img/budjettipostaus.jpg") repeat scroll 0 0 / 100% 100%;
+    background: rgba(0, 0, 0, 0) url("../img/budjettipostaus.jpg") repeat scroll 0 0 / 100% 100%;
     background-attachment: fixed;
 }
 .slider-reserve {
-    background: url(img/pattern-1.jpg);
+    background: url("../img/pattern-1.jpg");
     overflow: hidden;
     padding: 40px 25px;
 }
@@ -929,7 +928,7 @@ select {
  1.6 footer-area
 -----------------------------*/
 .footer-area {
-    background: rgba(0, 0, 0, 0) url("img/bkg_footer.jpg") repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("../img/bkg_footer.jpg") repeat scroll 0 0;
     color: #fff;
     position: relative;
 }
@@ -1000,7 +999,7 @@ input.newslatter {
 }
 .detail-subs { margin-bottom: 30px }
 .copyright-info {
-    background: rgba(0, 0, 0, 0) url("img/bkg_footer_bottom.jpg") repeat scroll left top;
+    background: rgba(0, 0, 0, 0) url("../img/bkg_footer_bottom.jpg") repeat scroll left top;
     text-align: center;
 }
 .copyright-info p,
@@ -1036,7 +1035,7 @@ input.newslatter {
 -----------------------------*/
 .shape-holder .section-title h1,
 .shape-holder .section-title h2 { color: #222 }
-.service-holder-area.shape-holder { background: rgba(0, 0, 0, 0) url("img/bg1_lavie.jpg") no-repeat scroll 0 0 / 100% 100% }
+.service-holder-area.shape-holder { background: rgba(0, 0, 0, 0) url("../img/bg1_lavie.jpg") no-repeat scroll 0 0 / 100% 100% }
 .shape-team-img { margin-top: 35px }
 .shape-holder .sm-des { padding: 0 90px }
 .about-reserv .single-about { width: 50% }
@@ -1067,13 +1066,13 @@ input.newslatter {
 .reservation-area.resa-3 .smi-des { padding-bottom: 20px }
 .resa-3 .input-box.checkout { text-align: center }
 .resa-3 .after-submit { text-align: center }
-.reservation-area.resa-3 { background: rgba(0, 0, 0, 0) url("img/bg_form.jpg") repeat fixed 0 0 / 100% 100% }
+.reservation-area.resa-3 { background: rgba(0, 0, 0, 0) url("../img/bg_form.jpg") repeat fixed 0 0 / 100% 100% }
 
 /* ---------------------------
  3. Menu Page
 -----------------------------*/
 .header-slider-area.common-page {
-    background: rgba(0, 0, 0, 0) url("img/breadcumb.jpg") repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("../img/breadcumb.jpg") repeat scroll 0 0;
     background-size: cover;
     -webkit-background-size: cover;
     min-height: 460px;
@@ -1111,9 +1110,9 @@ input.newslatter {
     bottom: 100px;
     width: 100%;
 }
-.sma-middle.bac-right { background: rgba(0, 0, 0, 0) url("img/bg_right.jpg") no-repeat right top }
+.sma-middle.bac-right { background: rgba(0, 0, 0, 0) url("../img/bg_right.jpg") no-repeat right top }
 .header-slider-area.common-page.event-page {
-    background: rgba(0, 0, 0, 0) url("img/banner-1.jpg") repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("../img/banner-1.jpg") repeat scroll 0 0;
     background-size: cover;
     -webkit-background-size: cover;
 }
@@ -1295,7 +1294,7 @@ aside:last-child { margin-bottom: 0 }
 .recent-post-wid { margin-top: 10px }
 .single-widget.fliker-img img { width: 67px }
 .header-slider-area.common-page.blog-page {
-    background: rgba(0, 0, 0, 0) url("img/breadcrumb-blog.jpg") repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("../img/breadcrumb-blog.jpg") repeat scroll 0 0;
     background-size: cover;
     -webkit-background-size: cover;
 }
@@ -1558,7 +1557,7 @@ aside:last-child { margin-bottom: 0 }
 /* ---------------------------
  8. about us page
 -----------------------------*/
-.about-service-area { background: rgba(0, 0, 0, 0) url("img/about-service.jpg") repeat fixed 0 0 }
+.about-service-area { background: rgba(0, 0, 0, 0) url("../img/about-service.jpg") repeat fixed 0 0 }
 .about-service-area .service-title > h2,
 .about-service-area .sm-des { color: #fff }
 .about-chef-area .single-service-holder { margin-bottom: 20px }
@@ -1591,14 +1590,16 @@ aside:last-child { margin-bottom: 0 }
     font-weight: 700;
 }
 .header-slider-area.common-page.reser-page {
-    background: rgba(0, 0, 0, 0) url("img/reservation.jpg") repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("../img/reservation.jpg") repeat scroll 0 0;
     background-size: cover;
     -webkit-background-size: cover;
 }
 /* ---------------------------
  9. Contact Page
 -----------------------------*/
-.map-area { position: relative }
+.map-area { 
+    position: relative;
+    margin-top: 100px; }
 .map-area > img {
     left: 10%;
     position: absolute;

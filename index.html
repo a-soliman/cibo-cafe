@@ -1298,53 +1298,15 @@
       
     <!--map area are start-->
     <div class="map-area">
-    <div id="googleMap"></div>
-</div>
+      <div id="googleMap"></div>
+    </div>
     <!--map area are end-->
      
     <!--footer area are start-->
      <div class="footer-area pt60 pb60">
          <div class="container">
              <div class="row">
-                 <!-- <div class="col-md-4 col-sm-4 col-xs-12">
-                     <div class="single-footer text-center">
-                        <div class="sosa-icon">
-                            <img src="img/icon/icon-service.png" alt="">
-                        </div>
-                         <h1>Delivery Service</h1>
-                         <div class="address">
-                            <span>
-                                249 street Ung Van Khiem ,<br>
-                                <! ward 25 Binh Thanh district ,HCM Vietnam <br>
-                                <span class="email">giao.trinh@emthemes.com</span>
-                            </span>
-                            <div class="phone-no">
-                                <span>+84 866 725 048</span>
-                            </div>
-                         </div>
-                     </div>
-                 </div> --> 
-                 <div class="col-md-8 col-sm-8 col-xs-12">
-                     <div class="single-footer text-center">
-                        <div class="sosa-icon">
-                            <img src="img/icon/icon-time.png" alt="">
-                        </div>
-                         <h1>Opening Time</h1>
-                         <div class="service-time">
-                            <h2>Every Day</h2>
-                            <span>From 07:00 am - 05:00 am</span>
-                          </div>
-                        <div class="service-time">
-                            <h2>BREAKFAST SERVICE</h2>
-                            <span>From 07:00 am - 11:00 am</span>
-                        </div>
-                        <div class="service-time">
-                            <h2>LUNCH SERVICE</h2>
-                            <span>From 10:00 am - 05:00 pm</span>
-                        </div>
-                     </div>
-                 </div>
-                 <div class="col-md-4 col-sm-4 col-xs-12">
+                 <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
                      <div class="single-footer text-center">
                         <div class="sosa-icon">
                             <img src="img/icon/icon-letter.png" alt="">
@@ -1355,21 +1317,24 @@
                         </div>
                         <form action="#">
                             <div class="input-box">
-                                <input class="newslatter" type="email" placeholder="Pur Entr Your email " name="newlatter">
+                                <input class="newslatter" type="email" placeholder="Submit your email " name="newlatter">
                                 <button title="Subscribe" type="submit" class="button"><i class="fa fa-paper-plane-o"></i></button>
                             </div>
                         </form>
-                     </div>
-                 </div>
-             </div>
-         </div>
+                     </div> <!-- single footer -->
+                 </div> <!-- col -->
+             </div> <!-- row -->
+         </div><!-- container -->
+     </div> <!-- footer -area -->
+     </div>
+     </div>
      </div>
     <!--footer area are end-->
         
     <!--Copyright area are start--> 
-      <div class="copyright-info pt60 pb60">
-        <div class="container">
-            <div class="row">
+      <div class="copyright-info pt60 pb60 menu-area">
+      <div class="row">
+        <div class="container-fluid">
               <div class="col-md-4 col-xs-12">
                 <div class="footer-single footer-first">
                   
@@ -1387,9 +1352,9 @@
                 </div> <!--footer-single-third--> 
               </div> <!-- col-4 -->
                 
-            </div>
-        </div>
-    </div>
+            </div><!-- container-fluid -->
+        </div> <!-- row -->
+    </div> <!-- copyright-info -->
     <!--Copyright area are end--> 
 
 		<!-- all js here -->
@@ -1432,7 +1397,7 @@
                     mapOptions);
                 var marker = new google.maps.Marker({
                     position: map.getCenter(),
-                    animation: google.maps.Animation.BOUNCE,
+                    // animation: google.maps.Animation.BOUNCE,
                     icon: 'img/map-marker1.png',
                     map: map
                 });

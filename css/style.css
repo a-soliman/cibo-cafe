@@ -1014,7 +1014,7 @@ input.newslatter {
 }
 .copyright-info p,
 .copyright-info p a {
-    color: #7d7b6d;
+    color: #ffffff;
     margin: 0;
     padding-top: 20px;
 }
@@ -2088,4 +2088,12 @@ h4.panel-title a:hover {
 .mobile-menu-area {
     background-color: #fa9020;
     padding-bottom: 20px;
+}
+
+
+@media (max-width: 767px) {
+    .about .hc-title {
+        background-color: #f2e9e0;
+        padding: 38px;
+    }
 }

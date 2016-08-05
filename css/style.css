@@ -999,8 +999,11 @@ input.newslatter {
 }
 .detail-subs { margin-bottom: 30px }
 .copyright-info {
-    background: rgba(0, 0, 0, 0) url("../img/bkg_footer_bottom.jpg") repeat scroll left top;
+    /*background: rgba(0, 0, 0, 0) url("../img/bkg_footer_bottom.jpg") repeat scroll left top;*/
+    background-color: #fa9020;
     text-align: center;
+    padding: 40px;
+    margin-bottom: 0;
 }
 .copyright-info p,
 .copyright-info p a {
@@ -1030,6 +1033,21 @@ input.newslatter {
 .footer-area .col-md-4 { position: inherit }
 .menu3 { text-transform: uppercase }
 .menu3 .mega-menu { width: 180px }
+.footer-single {
+text-align: center;
+}
+.footer-first {
+
+}
+.footer-second {
+
+}
+.footer-third {
+
+}
+.footer-third img {
+    margin: 0 auto;
+}
 /* ---------------------------
  3. Home 03 (Onepage)
 -----------------------------*/

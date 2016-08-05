@@ -1036,6 +1036,13 @@ input.newslatter {
 .footer-single {
 text-align: center;
 }
+.single-footer {
+    color: #463d38;
+    background-color: white;
+    padding: 50px 20px;
+    border-radius: 86px;
+    border: 2px solid #fa9020;
+}
 .footer-first {
 
 }

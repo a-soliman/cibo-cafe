@@ -434,6 +434,7 @@ a.com-btn:hover,.submt .com-btn.blg-btn:hover {
   background: #3b3330 none repeat scroll 0 0;
  -webkit-transition: all 0.3s ease 0s;
  transition: all 0.3s ease 0s;
+ background-color: #fa9020;
 }
 .single-about:hover > img {
     -webkit-transform: scale(1.05);
@@ -795,7 +796,7 @@ a.com-btn:hover,.submt .com-btn.blg-btn:hover {
 }
 .smi-price > span {
     color: #cf2b29;
-    font-family: great vibes;
+    font-family: inherit;
     font-size: 20px;
 }
 .special-menu {
@@ -899,11 +900,15 @@ a.com-btn:hover,.submt .com-btn.blg-btn:hover {
 .reservation-area .smi-des > span { color: #fff }
 input,
 select {
-    border: 1px solid #ccc;
+    border: 1px solid #fa9020;
     border-radius: 5px;
     height: 35px;
     width: 100%;
 }
+/*input:focus,
+select:focus {
+    border: 2px solid #fa9020;
+}*/
 .input-box label {
     color: #727272;
     margin-bottom: 10px;
@@ -954,7 +959,7 @@ select {
     margin-bottom: 20px;
 }
 .single-footer img {
-    max-width: 230px;
+    max-width: 170px;
 }
 .sosa-icon { padding-bottom: 20px }
 .email {
@@ -962,7 +967,7 @@ select {
     display: block;
 }
 .app {
-
+    margin-top: 20px;
 }
 .app i {
     color: #57ad56;
@@ -970,7 +975,7 @@ select {
     border-radius: 50%;
     padding: 5px;
     border: 1px solid #57ad56;
-    margin: 5px 10px;
+    margin: 15px 10px;
 }
 .app i:hover {
     color: #fa9020;
@@ -1672,7 +1677,7 @@ aside:last-child { margin-bottom: 0 }
     padding-left: 15px;
 }
 .right-side .area-tex {
-    border: 1px solid #ccc;
+    border: 1px solid #fa9020;
     border-radius: 5px;
     min-height: 180px;
     padding: 10px;

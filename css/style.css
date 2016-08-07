@@ -546,10 +546,12 @@ a.com-btn:hover,.submt .com-btn.blg-btn:hover {
 }
 
 /*New About*/
-.about .holder-content {
+.about {
+
 }
 .about .hc-title {
     margin-top: 10px;
+    text-align: center;
 }
 .about h2 {
     font-family: sans-serif;
@@ -939,6 +941,9 @@ select {
     color: #fff;
     position: relative;
 }
+.delivery .detail-subs {
+    margin-bottom: 10px;
+}
 .single-footer h1 {
     font-family: Lora, Helvetica, Arial, sans-serif;
     font-size: 20px;
@@ -948,10 +953,28 @@ select {
     position: relative;
     margin-bottom: 20px;
 }
+.single-footer img {
+    max-width: 230px;
+}
 .sosa-icon { padding-bottom: 20px }
 .email {
     margin-top: 10px;
     display: block;
+}
+.app {
+
+}
+.app i {
+    color: #57ad56;
+    font-size: 23px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #57ad56;
+    margin: 5px 10px;
+}
+.app i:hover {
+    color: #fa9020;
+    border: 1px solid #fa9020;
 }
 .phone-no > span {
     display: block;
@@ -1049,6 +1072,7 @@ text-align: center;
     padding: 50px 20px;
     border-radius: 86px;
     border: 2px solid #fa9020;
+    height: 370px;
 }
 .footer-first {
 
@@ -2089,11 +2113,32 @@ h4.panel-title a:hover {
     background-color: #fa9020;
     padding-bottom: 20px;
 }
+.copyright-info .author {
+    margin: 13px;
+    padding: 0
+}
+.copyright-info .author p {
+    padding: 0;
+}
+.copyright-info .author a {
+    background-color: #03A9F4;
+    padding: 5px 8px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.copyright-info .author a:hover {
+    text-decoration: none;
+    padding: 10px 12px;
+} 
+
+
 
 
 @media (max-width: 767px) {
     .about .hc-title {
         background-color: #f2e9e0;
         padding: 38px;
+        text-align: left;
     }
 }

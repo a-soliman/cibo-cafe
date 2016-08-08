@@ -413,7 +413,7 @@ em { color: red }
     margin: 30px 0;
 }
 a.com-btn,.submt .com-btn.blg-btn {
-    background-color: #b7a89a;
+    background-color: #fa9020;
     border: 2px solid transparent;
     border-radius: 5px;
     color: #fff;
@@ -423,8 +423,8 @@ a.com-btn,.submt .com-btn.blg-btn {
 }
 a.com-btn:hover,.submt .com-btn.blg-btn:hover {
     background-color: #fff;
-    border: 2px solid #b7a89a;
-    color: #b7a89a;
+    border: 2px solid #fa9020;
+    color: #fa9020;
 }
 .submt .com-btn.blg-btn {
   width: 100px;
@@ -570,8 +570,8 @@ a.com-btn:hover,.submt .com-btn.blg-btn:hover {
 .sm-price {
     bottom: 8%;
     color: #cf2b29;
-    font-family: great vibes;
-    font-size: 30px;
+    font-family: sans-serif;
+    font-size: 23px;
     position: absolute;
     width: 100%;
     text-align: center;
@@ -595,6 +595,9 @@ a.com-btn:hover,.submt .com-btn.blg-btn:hover {
     position: absolute;
     top: 50%;
 }
+.disabled-btn {
+    cursor: not-allowed;
+}
 .sm-heading {
     background: #fff none repeat scroll 0 0;
     bottom: 0;
@@ -607,6 +610,13 @@ a.com-btn:hover,.submt .com-btn.blg-btn:hover {
     width: 300px;
 }
 .sm-heading > a {
+    color: #222;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+}
+.sm-heading {
     color: #222;
     font-size: 18px;
     font-weight: 700;
@@ -1871,8 +1881,8 @@ table.table {
 .cart-action .input-box input { border-radius: 5px }
 .in-btn:hover {
     background: transparent none repeat scroll 0 0;
-    color: #b7a89a;
-    border-color: #b7a89a;
+    color: #fa9020;
+    border-color: #fa9020;
 }
 .item-qty > input {
     text-align: center;

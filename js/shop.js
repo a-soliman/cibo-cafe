@@ -2,24 +2,25 @@ var shopShelf = document.getElementById('shopShelf')
 
 var shopArray =[]
 
-function shopItem(image, name, descraption, price, inStock){
+function shopItem(image, smallImage,  name, descraption, price, inStock){
 	this.image = image
+	this.smallImage = smallImage
 	this.name = name
 	this.descraption = descraption
 	this.price = price
 	this.inStock = inStock
 }
-var houseHalf = new shopItem('img/menu/01.jpg', 'House Blend - 0.5 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '$ 9.75', false )
-var houseOne = new shopItem('img/menu/01.jpg', 'House Blend - 1 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '$ 18.00', true )
+var houseHalf = new shopItem('img/menu/01.jpg', 'img/product/01.jpg', 'House Blend - 0.5 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '9.75', false )
+var houseOne = new shopItem('img/menu/01.jpg', 'img/product/01.jpg', 'House Blend - 1 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '18.00', true )
 
-var espressoHalf = new shopItem('img/menu/01.jpg', 'Espresso Blend - 0.5 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '$ 9.75', true )
-var espressoOne = new shopItem('img/menu/01.jpg', 'Espresso Blend - 1 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '$ 18.00', true )
+var espressoHalf = new shopItem('img/menu/01.jpg', 'img/product/01.jpg', 'Espresso Blend - 0.5 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '9.75', true )
+var espressoOne = new shopItem('img/menu/01.jpg', 'img/product/01.jpg', 'Espresso Blend - 1 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '18.00', true )
 
-var decafHalf = new shopItem('img/menu/01.jpg', 'Decaf Blend - 0.5 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '$ 9.75', true )
-var decafOne = new shopItem('img/menu/01.jpg', 'Decaf Blend - 1 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '$ 18.00', true )
+var decafHalf = new shopItem('img/menu/01.jpg', 'img/product/01.jpg', 'Decaf Blend - 0.5 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '9.75', true )
+var decafOne = new shopItem('img/menu/01.jpg', 'img/product/01.jpg', 'Decaf Blend - 1 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '18.00', true )
 
-var KenyaHalf = new shopItem('img/menu/01.jpg', 'Kenya AA - 0.5 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '$ 9.75', true )
-var KenyaOne = new shopItem('img/menu/01.jpg', 'Kenya AA - 1 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '$ 18.00', true )
+var KenyaHalf = new shopItem('img/menu/01.jpg', 'img/product/01.jpg', 'Kenya AA - 0.5 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '9.75', true )
+var KenyaOne = new shopItem('img/menu/01.jpg', 'img/product/01.jpg', 'Kenya AA - 1 lb', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.', '18.00', true )
 
 //pushing the items into the array
 shopArray.push(houseHalf)
@@ -74,7 +75,10 @@ for (var i = 0; i < shopArray.length; i++) {
 		addToCart.setAttribute('class', 'com-btn disabled-btn')
 		addToCart.innerHTML = 'Out Of Stock'
 	} else {
-		addToCart.setAttribute('class', 'com-btn')
+		addToCart.setAttribute('class', 'com-btn addToCart')
+		addToCart.setAttribute('item-name', shopArray[i].name)
+		addToCart.setAttribute('item-price', shopArray[i].price)
+		addToCart.setAttribute('item-small-image', shopArray[i].smallImage )
 		addToCart.innerHTML = 'Add To Cart'
 	} // end of if statement
 
@@ -99,4 +103,83 @@ for (var i = 0; i < shopArray.length; i++) {
 	// putting everything on the selling shelf
 	shopShelf.appendChild(col)
 
+
+	
 } //the for loop
+
+// CART
+$('.addToCart').click(function(event) {
+	event.preventDefault();
+	var itemName = $(this).attr('item-name')
+	var itemPrice = $(this).attr('item-price')
+	var itemImage = $(this).attr('item-small-image')
+	console.log(itemName +' ' + itemPrice + itemImage)
+
+// creating cart elements
+//item wrapper
+var itemWrapper = document.createElement('tr')
+itemWrapper.setAttribute('class', 'cart_item')
+//Remove
+var cartRemove = document.createElement('td')
+cartRemove.setAttribute('class', 'remove')
+
+var removeA = document.createElement('a')
+removeA.setAttribute('href', '#')
+removeA.innerHTML = 'X'
+
+// image
+var cartImageHolder = document.createElement('td')
+cartImageHolder.setAttribute('class', 'item-img')
+
+var cartImage = document.createElement('img')
+cartImage.setAttribute('src', itemImage)
+
+//name
+var cartItemTitle = document.createElement('td')
+cartItemTitle.setAttribute('class', 'item-title')
+cartItemTitle.innerHTML = itemName
+
+//price
+var cartPrice = document.createElement('td')
+cartPrice.setAttribute('class', 'item-price')
+cartPrice.innerHTML = itemPrice
+
+//qty
+var  cartItemQty = document.createElement('td')
+cartItemQty.setAttribute('class', 'item-qty')
+
+var qtyInput = document.createElement('input')
+qtyInput.setAttribute('type', 'number')
+qtyInput.setAttribute('value', 1)
+qtyInput.setAttribute('id', 'itemQty')
+qtyInput.setAttribute('min', 1)
+qtyInput.setAttribute('name', 'qty')
+
+
+//total
+var cartTotal = document.createElement('td')
+cartTotal.innerHTML = qtyInput.value * itemPrice
+
+//nesting
+
+//cartRemove ===> contains removeA
+cartRemove.appendChild(removeA)
+//cartImageHolder ===> contains cartImage
+cartImageHolder.appendChild(cartImage)
+//cartItemQty ====> contains qtyInput
+cartItemQty.appendChild(qtyInput)
+// itemWrapper ====>conatins A)cartRemove , B)cartImageHolder , C)cartItemTitle , D)cartPrice , E)cartItemQty , F) cartTotal.
+itemWrapper.appendChild(cartRemove)
+itemWrapper.appendChild(cartImageHolder)
+itemWrapper.appendChild(cartItemTitle)
+itemWrapper.appendChild(cartPrice)
+itemWrapper.appendChild(cartItemQty)
+itemWrapper.appendChild(cartTotal)
+
+//intrducing the output
+var cart = document.getElementById('cart')
+// nesting to the output
+cart.appendChild(itemWrapper)
+	addItemToCart(itemImage, itemName, itemPrice, 1)
+})
+

@@ -246,44 +246,11 @@
                             </tr>
                         </thead>
                         <tbody id="cart">
-                            <tr class="cart_item">
-                                <td class="remove"><a href="#">X</a></td>
-                                <td class="item-img">
-                                    <a href="#"><img src="img/product/01.jpg" alt=""> </a>
-                                </td>
-                                <td class="item-title"> <a href="#">Espresso Blend - 1 lb </a></td>
-                                <td class="item-price"> $18.00 </td>
-                                <td class="item-qty">
-                                    <input type="number" value="1" min="1">
-                                </td>
-                                <td class="total-price"> $18.00</td>
-                            </tr>
-                            <tr class="cart_item">
-                                <td class="remove"><a href="#">X</a></td>
-                                <td class="item-img">
-                                    <a href="#"><img src="img/product/01.jpg" alt=""> </a>
-                                </td>
-                                <td class="item-title"> <a href="#">Decaf Beans - 0.5 lb</a></td>
-                                <td class="item-price"> $9.75 </td>
-                                <td class="item-qty">
-                                    <input type="number" value="1" min="1">
-                                </td>
-                                <td class="total-price"> $9.75</td>
-                            </tr>
-                            <tr class="cart_item">
-                                <td class="cart-action" colspan="6">
-                                    <div class="coupne-area">
-                                        <div class="input-box coupon-box">
-                                            <input type="text" name="name" placeholder="Coupne Code" class="apply-coupne">
-                                        </div>
-                                        <div class="input-box">
-                                            <input type="submit" class="in-btn" name="apply" value="Apply Coupon">
-                                        </div>
-                                    </div>
+                            
                                     <div class="update-cart">
 
                                         <div class="input-box">
-                                            <input type="button" class="in-btn" name="update-cart" value="Update Cart">
+                                            <input type="button" class="in-btn updateCart" name="update-cart" value="Update Cart">
                                         </div>
                                     </div>
                                 </td>
@@ -302,7 +269,7 @@
                         <tbody>
                             <tr class="cart_item">
                                 <td class="ctg-type"> Sub-Total</td>
-                                <td class="cgt-des"> $ 27.75 </td>
+                                <td class="cgt-des" id="subTotal"> </td>
                             </tr>
                             <tr class="cart_item">
                                 <td class="ctg-type"> Shipping</td>
@@ -310,7 +277,7 @@
                             </tr>
                             <tr class="cart_item">
                                 <td class="ctg-type"> Total</td>
-                                <td class="cgt-des"> $ 27.75 </td>
+                                <td class="cgt-des" id="total"></td>
                             </tr>
                         </tbody>
                     </table>

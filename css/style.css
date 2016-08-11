@@ -873,7 +873,8 @@ a.com-btn:hover,.submt .com-btn.blg-btn:hover {
 }
 .sma-middle .special-menu { padding: 20px 20px 65px }
 .sma-middle {
-    background: rgba(0, 0, 0, 0) url("../img/bg_left.jpg") no-repeat scroll 0 0;
+    /*../img/bg_left.jpg*/
+    background: rgba(0, 0, 0, 0) url("../img/demo/bakery2.jpg") no-repeat scroll 0 0;
     overflow: hidden;
 }
 .special-menu.sma-small { margin-top: 255px }
@@ -1106,7 +1107,9 @@ text-align: center;
 -----------------------------*/
 .shape-holder .section-title h1,
 .shape-holder .section-title h2 { color: #222 }
-.service-holder-area.shape-holder { background: rgba(0, 0, 0, 0) url("../img/bg1_lavie.jpg") no-repeat scroll 0 0 / 100% 100% }
+.service-holder-area.shape-holder {
+ background: rgba(0, 0, 0, 0); 
+}
 .shape-team-img { margin-top: 35px }
 .shape-holder .sm-des { padding: 0 90px }
 .about-reserv .single-about { width: 50% }
@@ -1181,9 +1184,13 @@ text-align: center;
     bottom: 100px;
     width: 100%;
 }
-.sma-middle.bac-right { background: rgba(0, 0, 0, 0) url("../img/bg_right.jpg") no-repeat right top }
+.sma-middle.bac-right { 
+    /*../img/bg_right.jpg*/
+    background: rgba(0, 0, 0, 0) url("../img/demo/salad.jpg") no-repeat right top 
+}
 .header-slider-area.common-page.event-page {
-    background: rgba(0, 0, 0, 0) url("../img/banner-1.jpg") repeat scroll 0 0;
+    /*../img/banner-1.jpg*/
+    background: rgba(0, 0, 0, 0) url("../img/events.jpg") repeat scroll 0 0;
     background-size: cover;
     -webkit-background-size: cover;
 }
@@ -1628,9 +1635,12 @@ aside:last-child { margin-bottom: 0 }
 /* ---------------------------
  8. about us page
 -----------------------------*/
-.about-service-area { background: rgba(0, 0, 0, 0) url("../img/about-service.jpg") repeat fixed 0 0 }
+.about-service-area {
+ background: rgba(0, 0, 0, 0) url("../img/about/about-service.jpg") no-repeat;
+ margin-top: 50px;
+ }
 .about-service-area .service-title > h2,
-.about-service-area .sm-des { color: #fff }
+.about-service-area .sm-des { color: #c07c19 }
 .about-chef-area .single-service-holder { margin-bottom: 20px }
 .about-chef-area .single-service-holder:last-child { margin-bottom: 0 }
 .single-gallery {
@@ -1661,7 +1671,7 @@ aside:last-child { margin-bottom: 0 }
     font-weight: 700;
 }
 .header-slider-area.common-page.reser-page {
-    background: rgba(0, 0, 0, 0) url("../img/reservation.jpg") repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("../img/contact.jpg") repeat scroll 0 0;
     background-size: cover;
     -webkit-background-size: cover;
 }
